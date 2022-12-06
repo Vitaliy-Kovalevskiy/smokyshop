@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>SmokYShop</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html,
+    body,
+    header,
+    .carousel{
+      height: 60vh;
+    }
+    @media (max-width: 740px){
+      html,
+      body,
+      header,
+      .carousel{
+        height: 100vh;
+      }
+    }
+@media (min-width: 800px) and (max-width: 850px){
+  html,
+  body,
+  header,
+  .carousel{
+    height: 100vh;
+  }
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+  <div class="container">
+    <a href="#" class="navbar-brand waves-effect">
+<strong class="red-text">SmokYShop</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarContent" aria-controls="navbarContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a href="index.html" class="nav-link waves-effect">Головна</a>
+      </li>
+      <li class="nav-item ">
+<a href="shop-page.html" class="nav-link waves-effect" >Товари</a>
+      </li>
+      <li class="nav-item active">
+<a href="map.html" class="nav-link waves-effect">Де ми?</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav nav-flex-icons">
+    </ul>
+    <div class="d-flex">
+      <button class="btn btn-outline-success" data-toggle="modal" data-target="#SignIN">Sign in</button>
+      <button class="btn btn-outline-danger ml-3" data-toggle="modal" data-target="#SignOUT">Sign out</button>
+    </div>
+  </div>
+  </div>
+</nav>
+<!--Modal-->
+<div class="modal fade" id="SignIN" tabindex="1" aria-labelledby="SignINLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+<h5 class="modal-title" id="SignINLabel">Реєстрація</h5>
+<button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+    </div>
+    <div class="modal-body">
+      <form action="">
+        <div class="row mb-3">
+          <label for="InputEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="InputEmail">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="InputPass" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="InputPass">
+          </div>
+        </div>
+        <fieldset>
+          <div class="row mb-3">
+            <legend class="col-form-label col-sm-3">Чи є вам 18?</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="radios" value="option1" id="radios1" checked>
+                <label for="radios1" class="form-check-label">Так</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="radios" value="option2" id="radios2">
+                <label for="radios2" class="form-check-label">Ні</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-form-label col-sm-2"></div>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input type="checkbox" id="gridCheck" class="form-control form-check-input">
+                <label for="gridCheck" class="form-check-label">Зберегти пароль</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+      <button class="btn btn-secondary">Зберегти</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="SignOUT" tabindex="1" aria-labelledby="SignOUTLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+  <h5 class="modal-title" id="SignOUTLabel">Авторизація</h5>
+  <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="row mb-3">
+            <label for="InputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="InputEmail">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="InputPass" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="InputPass">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+        <button class="btn btn-secondary">Зберегти</button>
+      </div>
+    </div>
+  </div>
+  </div>
+    <!--Modal-->
+
+<section class="contact">
+    <div class="container">
+        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=ru&amp;q=%D0%97%D0%B0%D0%BB%D0%B0%D0%B5%D0%B3%D0%B5%D1%80%D1%81%D0%B5%D0%B3%2018+(SmokyShop)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+    </div>
+</section>
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+<div class="pt-4">
+  <a href="#" role="button" class="btn btn-outline-white">SmokYShop</a>
+    <a href="#" role="button" class="btn btn-outline-white">Інтернет магазин</a>
+</div>
+<hr class="my-4">
+<div class="pb-4">
+    <a href="#"> <i class="fa fa-sharp fa-solid fa-comment mr-3"></i> </a>
+</div>
+<div class="footer-copyright py-3">
+  SmokYShop
+</div>
+</footer>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>
